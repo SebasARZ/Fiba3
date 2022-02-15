@@ -181,8 +181,8 @@
 		}
 
 		.evt-icon {
-			width: 2.6%;
-			height: 4.4%;
+			width: 20%;
+			height: 6%;
 			left: 20.5%;
 			bottom: 8.2%;
 		}
@@ -448,10 +448,10 @@
 			}
 
 			.evt-icon {
-				width: 6.5%;
-				height: 4.4%;
-				left: 16%;
-				bottom: 8.3%;
+				width: 40%;
+				height: 7%;
+				left: 3%;
+				bottom: 7.5%;
 			}
 
 			.evt-letrero.izq {
@@ -523,8 +523,10 @@
 			}
 
 			.evt-icon {
-				left: 14%;
+				left: 0.5%;
 				bottom: 9.6%;
+				width: 50%;
+				height: 5%;
 			}
 		}
 	</style>
@@ -553,13 +555,13 @@
 
 			<!-- BANNER DE LA IZQUIERDA -->
 			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO-->
-			<a href="https://virtual-stage.eventtia.com/en/aml2022/stage/166258?module=Attendees">
+			<a href="https://virtual-stage.eventtia.com/en/aml2022/stage/166258?module=Attendees"id="evt-banner_left" title="Banner uno" class="evt-abs evt-letrero evt-izq" target="_blank">
 				<!--<img src="img/banner_left.png" alt="Banner Left" class="evt-banner-img">-->
 			</a>
 			<!-- BANNER DE LA DERECHA -->
 			<!-- ESTA IMÁGEN SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO -->
-			<a href="https://virtual-stage.eventtia.com/en/aml2022/stage/166258?module=Speakers" target="_blank">
-				<!--<img src="img/banner_right.png" alt="Banner Right" class="evt-banner-img">-->
+			<a href="https://virtual-stage.eventtia.com/en/aml2022/stage/166258?module=Speakers"id="evt-banner_right" title="Banner dos" class="evt-abs evt-letrero evt-der" target="_blank">
+				<!-- <img src="img/banner_right.png" alt="Banner Right" class="evt-banner-img">-->
 			</a>
 
 			<!-- VIDEO CENTRAL SE COMPORTA SEGÚN DIMENCIONES DE LA PANTALLA Y EL TIPO DE DISPOSITIVO -->
@@ -589,7 +591,7 @@
 				<span>AGENDA</span>
 			</a>
 			<!-- CHIMENEA DERECHA -->
-			<a id="evt-link_right" title="Visitar SPONSORS"
+			<a id="evt-link_right" title="Visitar SPONSORS" 
 				href = "https://virtual-stage.eventtia.com/en/aml2022/stage/166258?module=Sponsors" target="_blank"
 				class="evt-abs evt-links evt-right-pos">
 				<span>EXPO AREA</span>
@@ -607,18 +609,18 @@
 			</div>-->
 
 
-			<!-- BOTON DE LA INFORMACIÓN - DISPARADOR DEL POPUP 
+		<!-- BOTON DE LA INFORMACIÓN - DISPARADOR DEL POPUP -->
 			<div id="evt-info_button" onclick="document.getElementById('evt-info').classList.add('open');"
-				class="evt-abs evt-icon">
+				class="evt-abs evt-icon"> 
 				<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle"
 					class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512 512">
-					<path fill="currentColor" class="info-path"
+						<!--<path fill="currentColor" class="info-path"
 						d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
-					</path>
-					<img style="width: 400%; height: 100%; margin-left: 100%;" src="./img/pierre fabre.png" alt="" id="img-information" >
+					</path>-->
 				</svg>
-			</div>	-->
+			</div>
+			<a class="evt-abs evt-icon" href="https://virtual-stage.eventtia.com/en/aml2022/home?module=Tutorials%20Videos" target="_blank" ></a>
 			 <audio id="evt-bg_audio" autoplay="" loop>
 				<source src="./audio/background_sound.mp3" type="audio/mpeg">
 			</audio>
@@ -626,10 +628,10 @@
 				var audio = document.getElementById("evt-bg_audio");
   				audio.volume = 0.02;
 			</script>
-		</div>-->
+		</div>
 		<!-- POPUP DE LA INFORMACIÓN GENERAL 
-		<div id="evt-info" class="evt-info">
-			<div class="evt-information inf-desktop">
+		<div id="evt-info" class="evt-info"> 
+			<div class="evt-information inf-desktop"> 
 				<img src="./img/information.png" id="info_h" alt="Information">
 			</div>
 			<div class="evt-information inf-phone">
@@ -639,7 +641,7 @@
 			<div id="evt-close-btn" onclick="document.getElementById('evt-info').classList.remove('open')">
 				Cerrar
 			</div>
-		</div>-->
+		</div>
 
 		<div id="evt-controls">
 			<div class="evt-audiobtn" onclick="document.getElementById('evt-bg_audio').play()"><svg aria-hidden="true"
@@ -655,7 +657,7 @@
 					<path fill="currentColor"
 						d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z">
 					</path>
-				</svg></div>
+				</svg></div>-->	
 			<!-- <div class="audiobtn" onclick="document.getElementById('evt-bg_audio').muted=!document.getElementById('evt-bg_audio').muted"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="volume-mute" class="svg-inline--fa fa-volume-mute fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zM461.64 256l45.64-45.64c6.3-6.3 6.3-16.52 0-22.82l-22.82-22.82c-6.3-6.3-16.52-6.3-22.82 0L416 210.36l-45.64-45.64c-6.3-6.3-16.52-6.3-22.82 0l-22.82 22.82c-6.3 6.3-6.3 16.52 0 22.82L370.36 256l-45.63 45.63c-6.3 6.3-6.3 16.52 0 22.82l22.82 22.82c6.3 6.3 16.52 6.3 22.82 0L416 301.64l45.64 45.64c6.3 6.3 16.52 6.3 22.82 0l22.82-22.82c6.3-6.3 6.3-16.52 0-22.82L461.64 256z"></path></svg></div> -->
 		</div>
 	</div>
